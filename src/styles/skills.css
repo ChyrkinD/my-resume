@@ -1,0 +1,19 @@
+.slills-subtitle {
+  font-size: 1.3em;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: black;
+}
+
+.skills-item {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  gap: 5px;
+}
+
+.menu-btn-icon {
+  flex-shrink: 0;
+  display: block;
+}
