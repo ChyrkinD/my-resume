@@ -3,43 +3,44 @@
 
   --primary-font: 'Roboto', sans-serif;
 
-  /* Colors */
-  --bg-color: rgba(27, 27, 27, 0.844); /* Others */
-  --indent-col: 32px;
-  --items: 3;
+  --bg--main-color: rgba(213, 213, 213, 0.366);
+  --bg-container-color: rgb(255, 255, 255);
 
   --trns-fast: 300ms ease-in;
   --trns-slow: 600ms ease-in;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 body {
-  width: 1280px;
-  min-width: 100%;
   padding: auto;
+  margin: 0;
 
   font-family: var(--primary-font);
-  font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.2;
   letter-spacing: -0.03em;
 
-  /* color: rgb(var(--cl-primary)); */
   color: rgb(40, 38, 38);
-  background-color: var(--bg-color);
+  background-color: var(--bg--main-color);
+}
+
+.wrapper {
+  background-color: var(--bg-container-color);
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .container {
   min-width: 320px;
   max-width: 375px;
   margin: 0 auto;
-  background-color: rgba(130, 236, 130, 0.76);
-  padding: 30px;
-  box-sizing: border-box;
-  border: 3px solid rgb(14, 231, 14);
-  box-shadow: 10px 10px 4px #4d4c4c;
-
-  border-radius: 30px;
+  padding: 20px;
 }
 @media only screen and (min-width: 768px) {
   .container {
@@ -52,28 +53,14 @@ body {
   }
 }
 
-section {
-  margin: 10px 0;
-}
-@media only screen and (min-width: 768px) {
-  section {
-    margin: 20px 0;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  section {
-    margin: 20px 0;
-  }
-}
-
 .section-title {
   text-align: center;
   font-size: 2em;
   line-height: 1.5;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  color: black;
+  color: inherit;
 }
 
 .section-subtitle {
@@ -81,7 +68,7 @@ section {
   line-height: 1.3;
   font-weight: 500;
   text-transform: uppercase;
-  color: black;
+  color: inherit;
 }
 
 .btn {
@@ -90,7 +77,6 @@ section {
   font-size: 20px;
   font-weight: 500;
 
-  box-sizing: border-box;
   border-radius: 10px;
   border: 2px solid darkgreen;
   padding: 5px;
