@@ -30,26 +30,31 @@ body {
   background-color: var(--bg--main-color);
 }
 
-.wrapper {
-  background-color: var(--bg-container-color);
-  margin: 0 auto;
-  max-width: 1200px;
-}
-
 .container {
   min-width: 320px;
   max-width: 375px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 15px;
 }
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 736px;
+    padding: 15px;
+  }
+
+  .wrapper {
+    background-color: var(--bg-container-color);
+    margin: 0 auto;
+    max-width: 760px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .container {
     max-width: 1168px;
+  }
+
+  .wrapper {
+    max-width: 1200px;
   }
 }
 
@@ -61,6 +66,29 @@ body {
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: inherit;
+}
+
+@media only screen and (min-width: 768px) {
+  .section-title {
+    text-align: center;
+    font-size: 2em;
+    line-height: 1.5;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: inherit;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .section-title {
+    text-align: center;
+    font-size: 2em;
+    line-height: 1.5;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: inherit;
+  }
 }
 
 .section-subtitle {
@@ -77,9 +105,9 @@ body {
   font-size: 20px;
   font-weight: 500;
 
-  border-radius: 10px;
-  border: 2px solid darkgreen;
-  padding: 5px;
+  padding: 14px 40px;
+  border-radius: 20px;
+  border: 2px solid currentColor;
 }
 
 .btn:hover,

@@ -1,13 +1,7 @@
 <header class="header">
   <div class="header-container container">
     <nav class="header-nav">
-      <a class="header-logo logo" href="#">{ Dmytro Chyrkin }</a>
-
-      <!-- <button class="menu-btn" type="button" aria-label="Open menu button">
-        <svg class="menu-btn-icon" width="24" height="24">
-          <use href="./src/images/icons.svg#paragraph-right"></use>
-        </svg>
-      </button> -->
+      <a class="header-logo" href="#">{ Dmytro Chyrkin }</a>
 
       <ul class="header-nav-list">
         <li class="header-nav-item">
@@ -27,14 +21,14 @@
         </li>
       </ul>
     </nav>
-    <ul class="header-socials socials socials-dark">
-      <!-- <li class="socials-item">
-        <a class="socials-link" href="mailto:chyrkin.work@gmail.com">
-          <svg class="socials-icon" width="24" height="24">
-            <use href="./src/images/icons.svg#gmail"></use>
-          </svg>
-        </a>
-      </li> -->
+
+    <button class="burger-btn" type="button" aria-label="Open menu button">
+      <svg class="burger-icon" width="24" height="24">
+        <use href="images/icons.svg#paragraph-right"></use>
+      </svg>
+    </button>
+
+    <ul class="header-socials socials">
       <li class="socials-item">
         <a
           class="socials-link"
@@ -84,5 +78,22 @@
         </a>
       </li>
     </ul>
+  </div>
+
+  <div class="mobile-menu js-menu-container">
+    <div class="container mobile-menu-container">
+      <button class="menu-close-btn js-close-menu">
+        <svg width="20" height="20">
+          <use href="images/icons.svg#cross"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-nav-list">
+        <li><a href="#" class="mobile-nav-link">About me</a></li>
+        <li><a href="#stack" class="mobile-nav-link">Stack</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#experiences" class="mobile-nav-link">Experience</a></li>
+      </ul>
+    </div>
   </div>
 </header>

@@ -1,0 +1,72 @@
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project-list-item {
+  display: flex;
+  gap: 15px;
+
+  padding: 5px;
+
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.project-img {
+  min-width: 150px;
+  border-radius: 10px;
+}
+
+.projet-images-item:not(:first-child) {
+  display: none;
+}
+
+.project-description {
+  font-size: 0.8em;
+  letter-spacing: 0.01em;
+}
+
+.projects .skills-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 768px) {
+  .projet-images-list {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .projet-images-item:not(:first-child) {
+    display: block;
+  }
+
+  .project-img {
+    min-width: 140px;
+  }
+  .project-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .project-list-item {
+    gap: 20px;
+  }
+
+  .projet-images-list {
+    gap: 10px;
+  }
+
+  .project-img {
+    min-width: 200px;
+  }
+
+  .project-description {
+    font-size: 1em;
+    letter-spacing: 0.01em;
+  }
+}

@@ -1,5 +1,5 @@
 .socials {
-  display: flex;
+  display: none;
   align-items: center;
   gap: 14px;
 }
@@ -25,4 +25,14 @@
 
   transition: var(--trns-fast);
   transition-property: color;
+}
+
+@media only screen and (min-width: 768px) {
+  .socials {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .socials {
+  }
 }
