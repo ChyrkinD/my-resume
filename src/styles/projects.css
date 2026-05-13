@@ -7,6 +7,7 @@
 .project-list-item {
   display: flex;
   gap: 15px;
+  flex-shrink: 0;
 
   padding: 5px;
 
@@ -14,8 +15,11 @@
   border-radius: 10px;
 }
 
+.projet-images-list {
+  flex-shrink: 0;
+}
+
 .project-img {
-  min-width: 150px;
   border-radius: 10px;
 }
 
@@ -44,7 +48,6 @@
   }
 
   .project-img {
-    min-width: 140px;
   }
   .project-text {
     display: flex;
@@ -62,7 +65,7 @@
   }
 
   .project-img {
-    min-width: 200px;
+    width: 200px;
   }
 
   .project-description {

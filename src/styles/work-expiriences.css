@@ -6,10 +6,21 @@
 
 .work-item {
   display: flex;
-  gap: 10px;
 
+  gap: 10px;
   padding: 5px;
 
   border: 1px solid black;
   border-radius: 10px;
+}
+
+.work-position-text {
+}
+
+@media only screen and (min-width: 768px) {
+}
+@media only screen and (min-width: 1200px) {
+  .work-position-text {
+    width: 450px;
+  }
 }
