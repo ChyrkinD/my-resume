@@ -1,13 +1,55 @@
 :root {
   scroll-behavior: smooth;
 
-  --primary-font: 'Roboto', sans-serif;
+  --font-primary: 'Oswald', sans-serif;
+  --font-secondary: 'Strichpunkt Sans', sans-serif;
+
+  --color-primary: #000;
+  --color-secondary: #4c5156;
+
+  --bg-color-primary: rgba(255, 255, 255, 0.8);
+  --bg-color-secondary: rgba(239, 239, 239, 0.8);
+
+  --fast-transition: 200ms ease-in-out;
+  --slow-transition: 500ms ease-in-out;
 }
 
 *,
 *::after,
 *::before {
   box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+address {
+  font-style: normal;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -23,20 +65,26 @@
   overflow: hidden;
 }
 
-body {
-  font-family: var(--primary-font);
-  font-size: 14px;
-  color: rgb(40, 38, 38);
-  background-color: var(--bg--main-color);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-primary);
+  color: var(--color-primary);
 }
 
-.main-container {
-  display: flex;
+body {
+  font-family: var(--font-secondary);
+  font-size: 16px;
+  color: var(--color-secondary);
+  background-color: var(--bg--main-color);
 }
 
 .container {
   min-width: 375px;
-  max-width: 760px;
+  max-width: 748px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -62,9 +110,4 @@ section {
   @media only screen and (min-width: 1200px) {
     padding: 60px 0;
   }
-}
-
-.sidebar {
-  position: fixed;
-  width: 30%;
 }

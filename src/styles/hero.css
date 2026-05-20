@@ -1,67 +1,92 @@
-.hero {
+.thumb {
+  margin: 0 auto;
+  min-width: 335px;
+  max-width: 400px;
+  overflow: hidden;
+  border-radius: 30px;
+  margin-bottom: 5px;
 }
-.hero-container {
-  box-shadow:
-    0 6px 10px 0 hsla(0, 0%, 56.5%, 0.5),
-    0 6px 10px 0 hsla(0, 0%, 56.5%, 0.5);
-  /*  */
-  /* box-shadow:  */
-  /* 0px 3px 3px -2px rgba(0, 0, 0, 0.2), */
-  /* 0px 3px 4px 0px rgba(0, 0, 0, 0.14), */
-  /* 0px 1px 8px 0px rgba(0, 0, 0, 0.12); */
+
+.hero-avatar-img {
+  object-fit: cover;
 }
 
 @media only screen and (min-width: 768px) {
   .hero-container {
     display: flex;
     align-items: center;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .hero-container {
-  }
-}
-
-.container {
-}
-.hero-avatar-img {
-  min-width: 340px;
-  border-radius: 30px;
-  box-sizing: border-box;
-  box-shadow: 0 5px 5px #4d4c4c;
-  margin-bottom: 10px;
-}
-
-@media only screen and (min-width: 768px) {
-  .hero-container {
-    margin: 20px;
+    gap: 20px;
     border-radius: 30px;
     box-sizing: border-box;
-    box-shadow: 0 5px 5px #4d4c4c;
+  }
+
+  .thumb {
+    flex-shrink: 0;
   }
 }
 @media only screen and (min-width: 1200px) {
   .hero-container {
   }
+}
+
+.mobile-socials {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5px;
 }
 
 .hero-text {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
+
+  border-radius: 20px;
+  padding: 5px;
+  box-shadow:
+    0px 3px 3px -2px rgba(0, 0, 0, 0.2),
+    0px 3px 4px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 8px 0px rgba(0, 0, 0, 0.12);
 }
+
+@media screen and (min-width: 768px) {
+  .hero-text {
+    flex-grow: 1;
+  }
+}
+
 .hero-title {
-  font-size: 40px;
+  font-size: 36px;
   line-height: 1.5;
   letter-spacing: -0.02em;
   text-transform: capitalize;
   color: black;
 }
+.summary-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.hero-summary {
+  text-align: center;
+  font-size: 16px;
+}
 
-.mobile-socials {
-  display: flex;
-  justify-content: space-around;
+.btn {
+  color: inherit;
+  background-color: rgb(198, 198, 198);
+  padding: 15px 30px;
+  border-radius: 12px;
+  border-color: beige;
+  font-size: 20px;
+  transition:
+    background-color 200ms ease-in-out,
+    transform 200ms ease-in-out;
+}
+
+.btn:hover {
+  background-color: rgb(142, 142, 142);
+  transform: scale(1.03);
 }
 
 @media only screen and (min-width: 768px) {
@@ -80,7 +105,4 @@
 }
 
 .section-title {
-}
-.hero-summary {
-  text-align: center;
 }
